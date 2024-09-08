@@ -3,24 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Background Example</title>
+    <title>Image Background Example</title>
     <style>
-        /* CSS to style the background video */
+        /* CSS to style the background image */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             overflow: hidden;
             font-family: Arial, sans-serif;
-        }
-
-        .video-background {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -1; /* Ensure the video stays in the background */
+            background: url('https://th.bing.com/th/id/OIP.y5bHH9M8KoYKaechHdwGWgHaEK?rs=1&pid=ImgDetMain') no-repeat center center fixed;
+            background-size: cover;
         }
 
         .content {
@@ -29,7 +22,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            color: black; /* Text color */
+            color: white; /* Text color */
         }
 
         .content h1 {
@@ -45,13 +38,7 @@
 </head>
 <body>
 
-    <!-- Video background -->
-    <video autoplay muted loop class="video-background">
-        <source src="3141208-uhd_3840_2160_25fps.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
-    <!-- Content over the video -->
+    <!-- Content over the background image -->
     <div class="content">
         <h1>Hi Hello</h1>
         <p>How is it going</p>
